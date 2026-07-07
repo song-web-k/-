@@ -3,177 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Les Bleus | France Champion Motion</title>
-  <meta name="description" content="法国国家足球队展示网站：Luxury、Motion、Champion、法兰西浪漫与世界杯激情。">
+  <title>France Les Bleus | 2026 World Cup Showcase</title>
+  <meta name="description" content="法国国家足球队九屏沉浸式展示网站，包含 Hero、球队介绍、球星轮播、荣耀时间轴、战术阵型、动态图表、世界杯旅程、画廊和球迷字幕。">
   <link rel="preconnect" href="https://upload.wikimedia.org">
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=9screens">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="site-noise" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="France Champion 首页">
+    <a class="brand" href="#hero" aria-label="France Les Bleus 首页">
       <span class="brand-mark">FFF</span>
       <span>Les Bleus</span>
     </a>
     <nav class="nav-links" aria-label="页面导航">
-      <a href="#legacy">荣耀</a>
-      <a href="#players">球员</a>
-      <a href="#identity">法兰西</a>
-      <a href="#stadium">激情</a>
+      <a href="#team">Team</a>
+      <a href="#stars">Stars</a>
+      <a href="#glory">Glory</a>
+      <a href="#formation">Tactics</a>
+      <a href="#journey">Journey</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-video" aria-hidden="true">
-        <div class="video-frame frame-one"></div>
-        <div class="video-frame frame-two"></div>
-        <div class="video-frame frame-three"></div>
-        <div class="speed-line line-a"></div>
-        <div class="speed-line line-b"></div>
-        <div class="speed-line line-c"></div>
+  <main>
+    <section id="hero" class="screen hero-screen">
+      <div class="hero-grid" aria-hidden="true">
+        <div class="hero-player mbappe"></div>
+        <div class="hero-player dembele"></div>
+        <div class="hero-player tchouameni"></div>
+        <div class="hero-player saliba"></div>
       </div>
-      <div class="hero-shade"></div>
-      <div class="hero-content" data-reveal>
-        <p class="eyebrow">Luxury · Motion · Champion</p>
-        <h1>France<br>Champion<br>Motion</h1>
-        <p class="hero-copy">法国蓝掠过草皮，冠军金照亮星辰。从 1998 到 2018，从浪漫巴黎到世界杯决赛夜，Les Bleus 把速度、优雅与荣耀写进同一种节奏。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#players">进入阵容</a>
-          <a class="button ghost" href="#legacy">回看荣耀</a>
+      <div class="hero-overlay"></div>
+      <div class="speed-field" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-center reveal">
+        <p class="kicker">France National Football Team</p>
+        <h1>FRANCE<br><span>LES BLEUS</span></h1>
+        <h2>2026 FIFA WORLD CUP</h2>
+        <p class="hero-tagline">One Nation.<br>One Dream.<br>One More Star.</p>
+        <a class="explore-button" href="#team" aria-label="Explore">
+          <span>Explore</span>
+          <strong>↓</strong>
+        </a>
+      </div>
+    </section>
+
+    <section id="team" class="screen team-screen">
+      <div class="section-title reveal">
+        <p class="kicker">Team Introduction</p>
+        <h2>Blue identity, golden ambition.</h2>
+      </div>
+      <div class="team-layout">
+        <div class="map-panel glass reveal">
+          <svg class="france-map" viewBox="0 0 360 360" role="img" aria-label="法国地图图形">
+            <path d="M174 27 225 55 276 50 309 98 287 151 327 197 278 229 273 286 219 294 180 332 139 298 83 302 69 248 31 207 61 158 49 105 103 78Z"></path>
+            <circle cx="183" cy="153" r="9"></circle>
+            <text x="196" y="158">Paris</text>
+          </svg>
+          <div class="map-rings" aria-hidden="true"></div>
+          <p>Bleu · Blanc · Rouge</p>
+        </div>
+        <div class="team-copy reveal">
+          <p>法国国家足球队将浪漫、速度与纪律放在同一条跑道上。它既是欧洲足球的艺术象征，也是世界杯赛场最具爆发力的冠军力量之一。</p>
+          <div class="data-grid">
+            <article class="data-card glass"><span>Founded</span><strong class="count" data-target="1904">0</strong></article>
+            <article class="data-card glass"><span>Association</span><strong>FFF</strong></article>
+            <article class="data-card glass"><span>World Ranking</span><strong>Elite</strong></article>
+            <article class="data-card glass"><span>World Champion</span><strong>1998<br>2018</strong><em>⭐⭐</em></article>
+            <article class="data-card glass"><span>European Champion</span><strong>1984<br>2000</strong></article>
+            <article class="data-card glass"><span>Coach</span><strong>Didier<br>Deschamps</strong></article>
+            <article class="data-card glass"><span>Captain</span><strong>Mbappé</strong></article>
+            <article class="data-card glass"><span>Mission</span><strong>One More Star</strong></article>
+          </div>
         </div>
       </div>
-      <div class="hero-stat glass" data-parallax="0.18">
-        <span>2</span>
-        <p>FIFA World Cup Stars<br>1998 · 2018</p>
+    </section>
+
+    <section id="stars" class="screen stars-screen">
+      <div class="section-title reveal">
+        <p class="kicker">Star Players</p>
+        <h2>Cards in motion. Talent in orbit.</h2>
+      </div>
+      <div class="carousel-shell reveal">
+        <button class="carousel-btn prev" type="button" aria-label="上一位球员">‹</button>
+        <div class="player-carousel" aria-label="球员卡片轮播">
+          <article class="star-card glass active">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg/250px-Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg" alt="Kylian Mbappé">
+            <div class="highlight-gif"></div>
+            <span class="shirt">10</span>
+            <h3>Mbappé</h3>
+            <p>Forward</p>
+            <small>Real Madrid · France</small>
+          </article>
+          <article class="star-card glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Ousmane_Dembele_France_v_Senegal_16_June_2026-341_%28cropped%29.jpg/250px-Ousmane_Dembele_France_v_Senegal_16_June_2026-341_%28cropped%29.jpg" alt="Ousmane Dembélé">
+            <div class="highlight-gif"></div>
+            <span class="shirt">11</span>
+            <h3>Dembélé</h3>
+            <p>Wing</p>
+            <small>PSG · France</small>
+          </article>
+          <article class="star-card glass">
+            <div class="portrait-avatar">EC</div>
+            <div class="highlight-gif"></div>
+            <span class="shirt">6</span>
+            <h3>Camavinga</h3>
+            <p>Midfielder</p>
+            <small>Real Madrid · France</small>
+          </article>
+          <article class="star-card glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/William_Saliba_France_v_Senegal_16_June_2026-336_%28cropped%29.jpg/250px-William_Saliba_France_v_Senegal_16_June_2026-336_%28cropped%29.jpg" alt="William Saliba">
+            <div class="highlight-gif"></div>
+            <span class="shirt">17</span>
+            <h3>Saliba</h3>
+            <p>Defender</p>
+            <small>Arsenal · France</small>
+          </article>
+          <article class="star-card glass">
+            <div class="portrait-avatar">MM</div>
+            <div class="highlight-gif"></div>
+            <span class="shirt">16</span>
+            <h3>Maignan</h3>
+            <p>Goalkeeper</p>
+            <small>AC Milan · France</small>
+          </article>
+        </div>
+        <button class="carousel-btn next" type="button" aria-label="下一位球员">›</button>
       </div>
     </section>
 
-    <section id="legacy" class="legacy-section section-pad">
-      <div class="section-heading" data-reveal>
-        <p class="eyebrow">Champion Archive</p>
-        <h2>辉煌历史，一条金色跑道</h2>
+    <section id="glory" class="screen glory-screen">
+      <div class="section-title reveal">
+        <p class="kicker">Road To Glory</p>
+        <h2>From first whistle to the next star.</h2>
       </div>
-      <div class="timeline">
-        <article class="glass reveal-card" data-reveal>
-          <span>1984</span>
-          <h3>欧洲之巅</h3>
-          <p>普拉蒂尼时代的法兰西艺术足球，在主场捧起欧洲杯，奠定蓝色优雅的传奇基调。</p>
-        </article>
-        <article class="glass reveal-card" data-reveal>
-          <span>1998</span>
-          <h3>第一颗星</h3>
-          <p>巴黎之夏，齐达内与黄金一代让法国首次成为世界杯冠军，香榭丽舍彻夜沸腾。</p>
-        </article>
-        <article class="glass reveal-card" data-reveal>
-          <span>2000</span>
-          <h3>黄金延续</h3>
-          <p>欧洲杯冠军让法国完成世界冠军与欧洲冠军的双冠接力，技术与自信达到巅峰。</p>
-        </article>
-        <article class="glass reveal-card" data-reveal>
-          <span>2018</span>
-          <h3>第二颗星</h3>
-          <p>姆巴佩的速度点燃俄罗斯世界杯，年轻一代以爆发力和纪律性重塑冠军形象。</p>
-        </article>
-        <article class="glass reveal-card" data-reveal>
-          <span>2021</span>
-          <h3>欧国联冠军</h3>
-          <p>面对欧洲强敌，法国再次证明阵容深度、反击效率与大赛心脏。</p>
-        </article>
-        <article class="glass reveal-card" data-reveal>
-          <span>2022</span>
-          <h3>决赛激情</h3>
-          <p>卡塔尔决赛夜，姆巴佩帽子戏法让世界屏息，虽未卫冕，却留下世界杯史诗瞬间。</p>
-        </article>
+      <div class="glory-timeline">
+        <article class="timeline-step reveal"><span>1904</span><p>Foundation</p></article>
+        <article class="timeline-step reveal"><span>1984</span><p>European Champion</p></article>
+        <article class="timeline-step reveal gold"><span>1998</span><p>⭐⭐ World Champion</p></article>
+        <article class="timeline-step reveal"><span>2000</span><p>European Champion</p></article>
+        <article class="timeline-step reveal gold"><span>2018</span><p>⭐⭐ World Champion</p></article>
+        <article class="timeline-step reveal"><span>2022</span><p>Runner-up</p></article>
+        <article class="timeline-step reveal future"><span>2026</span><p>Dream Continues</p></article>
       </div>
     </section>
 
-    <section id="players" class="players-section">
-      <div class="section-heading section-pad" data-reveal>
-        <p class="eyebrow">Elite Squad</p>
-        <h2>速度、创造、屏障、引擎</h2>
+    <section id="formation" class="screen formation-screen">
+      <div class="section-title reveal">
+        <p class="kicker">Tactical Formation</p>
+        <h2>4-2-3-1. Space, speed, control.</h2>
       </div>
-      <div class="player-grid section-pad">
-        <article class="player-card glass" data-reveal data-parallax="0.06">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg/250px-Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg" alt="姆巴佩身穿法国队球衣">
-          <div class="player-info">
-            <span class="number">10</span>
-            <p>Forward · Captain</p>
-            <h3>Kylian Mbappé<br><em>姆巴佩</em></h3>
-            <small>用加速度撕开防线，用决赛进球定义时代。法国锋线的第一道闪电。</small>
-          </div>
-        </article>
-        <article class="player-card glass" data-reveal data-parallax="0.1">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Ousmane_Dembele_France_v_Senegal_16_June_2026-341_%28cropped%29.jpg/250px-Ousmane_Dembele_France_v_Senegal_16_June_2026-341_%28cropped%29.jpg" alt="登贝莱身穿法国队球衣">
-          <div class="player-info">
-            <span class="number">11</span>
-            <p>Winger · Creator</p>
-            <h3>Ousmane Dembélé<br><em>登贝莱</em></h3>
-            <small>双足、变向与不可预测的节奏，让边路像巴黎夜色一样流动。</small>
-          </div>
-        </article>
-        <article class="player-card glass" data-reveal data-parallax="0.08">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Aurelien_Tchouameni_France_v_Senegal_16_June_2026-447_%28cropped%29.jpg/250px-Aurelien_Tchouameni_France_v_Senegal_16_June_2026-447_%28cropped%29.jpg" alt="楚阿梅尼身穿法国队球衣">
-          <div class="player-info">
-            <span class="number">8</span>
-            <p>Midfield · Engine</p>
-            <h3>Aurélien Tchouaméni<br><em>楚阿梅尼</em></h3>
-            <small>覆盖、防守、远射与第一脚出球，冠军球队中场的金属骨架。</small>
-          </div>
-        </article>
-        <article class="player-card glass" data-reveal data-parallax="0.12">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/William_Saliba_France_v_Senegal_16_June_2026-336_%28cropped%29.jpg/250px-William_Saliba_France_v_Senegal_16_June_2026-336_%28cropped%29.jpg" alt="萨利巴身穿法国队球衣">
-          <div class="player-info">
-            <span class="number">17</span>
-            <p>Defender · Wall</p>
-            <h3>William Saliba<br><em>萨利巴</em></h3>
-            <small>冷静、强壮、速度出色，用现代中卫的姿态守住法国蓝的底线。</small>
-          </div>
-        </article>
+      <div class="pitch glass reveal" aria-label="法国队战术阵型">
+        <button class="player-dot" style="--x:50%;--y:14%" data-name="Mbappé" data-role="Forward" data-goals="92" data-speed="99" data-dribbling="96" data-overall="96">10</button>
+        <button class="player-dot" style="--x:24%;--y:32%" data-name="Dembélé" data-role="Wing" data-goals="84" data-speed="94" data-dribbling="97" data-overall="91">11</button>
+        <button class="player-dot" style="--x:50%;--y:35%" data-name="Griezmann" data-role="Creator" data-goals="88" data-speed="82" data-dribbling="91" data-overall="90">7</button>
+        <button class="player-dot" style="--x:76%;--y:32%" data-name="Coman" data-role="Wing" data-goals="80" data-speed="93" data-dribbling="90" data-overall="88">20</button>
+        <button class="player-dot" style="--x:40%;--y:54%" data-name="Tchouaméni" data-role="Midfield Shield" data-goals="76" data-speed="84" data-dribbling="82" data-overall="89">8</button>
+        <button class="player-dot" style="--x:60%;--y:55%" data-name="Camavinga" data-role="Midfielder" data-goals="74" data-speed="88" data-dribbling="90" data-overall="88">6</button>
+        <button class="player-dot" style="--x:18%;--y:74%" data-name="Theo" data-role="Full-back" data-goals="78" data-speed="91" data-dribbling="85" data-overall="88">22</button>
+        <button class="player-dot" style="--x:39%;--y:78%" data-name="Konaté" data-role="Defender" data-goals="62" data-speed="84" data-dribbling="71" data-overall="87">5</button>
+        <button class="player-dot" style="--x:61%;--y:78%" data-name="Saliba" data-role="Defender" data-goals="65" data-speed="86" data-dribbling="76" data-overall="90">17</button>
+        <button class="player-dot" style="--x:82%;--y:74%" data-name="Koundé" data-role="Full-back" data-goals="66" data-speed="83" data-dribbling="78" data-overall="86">3</button>
+        <button class="player-dot keeper" style="--x:50%;--y:91%" data-name="Maignan" data-role="Goalkeeper" data-goals="45" data-speed="71" data-dribbling="62" data-overall="89">16</button>
+        <div class="player-popover" id="playerPopover" aria-live="polite"></div>
       </div>
     </section>
 
-    <section id="identity" class="identity-section">
-      <div class="identity-image" data-parallax="0.14"></div>
-      <div class="identity-copy glass" data-reveal>
-        <p class="eyebrow">Bleu · Blanc · Rouge</p>
-        <h2>法兰西浪漫，是冷静里的火焰</h2>
-        <p>这不是只有速度的球队。法国队的魅力在于冲刺前的停顿、传球前的凝视、进球后全场蓝白红的浪潮。高级感来自克制，激情来自决胜时刻的爆发。</p>
+    <section id="stats" class="screen stats-screen">
+      <div class="section-title reveal">
+        <p class="kicker">Team Statistics</p>
+        <h2>Power bars, animated like a final counterattack.</h2>
+      </div>
+      <div class="stats-board glass reveal">
+        <div class="stat-row" data-value="96"><span>攻击力</span><div><i></i></div><strong>0</strong></div>
+        <div class="stat-row" data-value="88"><span>控球率</span><div><i></i></div><strong>0</strong></div>
+        <div class="stat-row" data-value="92"><span>射门</span><div><i></i></div><strong>0</strong></div>
+        <div class="stat-row" data-value="86"><span>防守</span><div><i></i></div><strong>0</strong></div>
+        <div class="stat-row" data-value="99"><span>速度</span><div><i></i></div><strong>0</strong></div>
       </div>
     </section>
 
-    <section id="stadium" class="stadium-section section-pad">
-      <div class="stadium-copy" data-reveal>
-        <p class="eyebrow">World Cup Fever</p>
-        <h2>当世界杯灯光亮起，法国蓝开始加速</h2>
+    <section id="journey" class="screen journey-screen">
+      <div class="section-title reveal">
+        <p class="kicker">World Cup Journey</p>
+        <h2>A route drawn for pressure.</h2>
       </div>
-      <div class="metric-row">
-        <article class="metric glass" data-reveal>
-          <span>1998</span>
-          <p>首夺世界杯</p>
-        </article>
-        <article class="metric glass" data-reveal>
-          <span>2018</span>
-          <p>第二次捧杯</p>
-        </article>
-        <article class="metric glass" data-reveal>
-          <span>2022</span>
-          <p>世界杯亚军</p>
-        </article>
-        <article class="metric glass" data-reveal>
-          <span>∞</span>
-          <p>蓝色信仰</p>
-        </article>
+      <div class="journey-route reveal">
+        <span>Group Stage</span>
+        <span>Round of 32</span>
+        <span>Round of 16</span>
+        <span>Quarter Final</span>
+        <span>Semi Final</span>
+        <span>Final</span>
       </div>
+    </section>
+
+    <section id="gallery" class="screen gallery-screen">
+      <div class="section-title reveal">
+        <p class="kicker">Gallery</p>
+        <h2>Celebration, training, fans, trophy, stadium.</h2>
+      </div>
+      <div class="masonry reveal">
+        <figure><img src="https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?auto=format&fit=crop&w=700&q=85" alt="球队庆祝"><figcaption>Celebration</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=700&q=85" alt="训练场"><figcaption>Training</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=700&q=85" alt="球迷"><figcaption>Fans</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=700&q=85" alt="奖杯"><figcaption>Trophy</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=700&q=85" alt="球场"><figcaption>Stadium</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=700&q=85" alt="比赛瞬间"><figcaption>Night Match</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="fans" class="screen fans-screen">
+      <div class="fans-bg" aria-hidden="true"></div>
+      <div class="chant reveal">
+        <p>ALLEZ LES BLEUS!</p>
+        <h2>⭐⭐ FRANCE!</h2>
+        <span>One Nation. One Dream. One More Star.</span>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div>ALLEZ LES BLEUS! ⭐⭐ FRANCE! 2026 FIFA WORLD CUP · ALLEZ LES BLEUS! ⭐⭐ FRANCE! 2026 FIFA WORLD CUP ·</div>
+      </div>
+      <div class="sound-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>Les Bleus Showcase · Fan-made visual concept</p>
-    <p>Player imagery via Wikimedia Commons</p>
-  </footer>
-
-  <script src="./script.js"></script>
+  <script src="./script.js?v=9screens"></script>
 </body>
 </html>
